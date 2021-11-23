@@ -4,7 +4,7 @@ a{text-decoration: none;}
 img { display: block; max-width: 100%; height: auto; }
 li {list-style: none;}
 :focus {outline: none}
-:hover,:focus{ transition: 250ms;}
+
 
 
 
@@ -36,11 +36,17 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 
 .header_logo {
+    display: flex;
     float: left;
-    margin: 24px 0 25px;
+    margin: 0 93px 0 0;
     text-decoration: none;
 }
 
@@ -59,32 +65,33 @@ header {
     color: #212121;
 }
 
+
 .header_nav {
     display: inline-block;
     overflow: hidden;
+    padding: 25px 0 25px;
 }
 
 .header_contacts{
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
 .header_contacts {
     float: right;
-    margin: 33px 0 25px 93px;
 }
 
 .header_nav {
+    padding: 25px 0 25px;
     display: flex;
-    margin-right: 50px;
-
+    justify-content: space-between;
 }
 
 
 .header_contacts li a {
     position: relative;
-
-    padding: 20px 0 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     font-family: 'Roboto',Arial,sans-serif;
     font-weight: 500;
@@ -109,7 +116,7 @@ header {
     position: absolute;
 
     width: 100%;
-    top: 100%;
+    top: 250%;
     right: 50%;
 
     transform: translate(50%,50%);
@@ -128,8 +135,8 @@ header {
 
 .tel {
     display: flex;
-    gap: 50px;
-    margin: 33px 0 24px 200px;
+    align-items: center;
+    gap: 30px;
     float: right;
 }
 
@@ -139,6 +146,9 @@ header {
     font-size: 14px;
     font-family: 'Roboto-Regular',Arial,sans-serif;
     font-weight: 500;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio_link:visited,
@@ -183,6 +193,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 60px;
 }
 
 
@@ -196,6 +207,9 @@ main {
     border-radius: 5px;
     font-family: 'Roboto-Regular',Arial,sans-serif;
     cursor: pointer;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -204,11 +218,11 @@ main {
     color: white;
     background: #2196F3;
     box-shadow: 0 0 4px lightgrey;
+
 }
 
 
 .card {
-    padding: 60px 0 0 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -217,14 +231,13 @@ main {
 
 .card li {
     border-bottom: 1px solid #EEEEEE;
-    overflow: hidden;
-    border-radius: 10px;
+    /*overflow: hidden;*/
 }
 
 .card_link {
     display: block;
-    border-radius: 10px;
     overflow: hidden;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card_img {
     width: 100%;
@@ -232,8 +245,7 @@ main {
 
 .card_link:hover,
 .card_link:focus{
-    box-shadow: 0 0 7px lightgrey;
-}
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)}
 
 .card_text {
     padding: 20px 24px;
@@ -243,11 +255,11 @@ main {
 .box {
     position: relative;
     overflow: hidden;
+
 }
 
 .box:hover .overlay {
     transform: translateY(0);
-    transition: 350ms ;
 }
 
 .overlay {
@@ -257,7 +269,7 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
-
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
 }
 
@@ -274,7 +286,7 @@ main {
 
 
 
-/*===================overlay======================*/
+/*===================overlay--end======================*/
 h2 {
     padding-bottom: 4px;
     font-family: 'Roboto-Regular',Arial,sans-serif;
@@ -322,6 +334,8 @@ address li a{
     font-family: 'Roboto',Arial,sans-serif;
     font-weight: 400;
     font-size: 14px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .town {
@@ -385,13 +399,13 @@ address li a{
     height: 44px;
     border-radius: 50%;
     background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) );
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
 .footer_networks_link:hover,
 .footer_networks_link:focus {
     background: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_svg {

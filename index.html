@@ -28,19 +28,19 @@
                     <li><a href="portfolio.html">Портфолио</a></li>
                     <li><a href="#footer">Контакты</a></li>
                 </ul>
-                <ul class="tel">
-                    <li class="li_hover">
-                        <a class="mail" href="mailto:info@devstudio.com"><svg class="svg_mail" width="16" height="12">
-                            <use href="img/icons/symbol-defs.svg#icon-envelope-hover"></use>
-                        </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="li_hover">
-                        <a class="tel_tel"  href="tel:+380961111111"><svg class="svg_tel" width="10" height="16">
-                            <use href="img/icons/symbol-defs.svg#icon-Vector"></use>
-                        </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
             </nav>
+            <ul class="tel">
+                <li class="li_hover">
+                    <a class="mail" href="mailto:info@devstudio.com"><svg class="svg_mail" width="16" height="12">
+                        <use href="img/icons/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg>info@devstudio.com</a>
+                </li>
+                <li class="li_hover">
+                    <a class="tel_tel"  href="tel:+380961111111"><svg class="svg_tel" width="10" height="16">
+                        <use href="img/icons/symbol-defs.svg#icon-Vector"></use>
+                    </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
@@ -100,12 +100,13 @@
     <section class="section_do">
         <div class="container">
             <h2 class="what_do">Чем мы занимаемся</h2>
+
             <ul class="do__item">
                 <li>
                     <div class="window">
                         <img class="do__img" src="img/key.jpg" alt="key" width="370" height="294">
                         <div class="window_absolute">
-                            <p>Десктопные приложения</p>
+                            <p class="window_text">Десктопные приложения</p>
                         </div>
                     </div>
                 </li>
@@ -117,17 +118,16 @@
                         </div>
                     </div>
                 </li>
-
-
                 <li>
                     <div class="window">
                         <img src="img/tablet.jpg" alt="tablet" width="370" height="294">
                         <div class="window_absolute">
-                            <p>Дизайнерские решения</p>
+                            <p class="window_text">Дизайнерские решения</p>
                         </div>
                     </div>
                 </li>
             </ul>
+
         </div>
     </section>
 
@@ -349,7 +349,7 @@
 
 <footer id="footer">
     <div class="container">
-        <div class="footer_ul"+>
+        <div class="footer_ul">
 
             <div class="first_ul">
                 <a class="footer_logo" href=""><span class="web">Web</span><span class="footer_studio">Studio</span></a>
@@ -405,6 +405,38 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button  data-modal-close class="close_btn" ></button>
+
+
+        <h5 class="modal_main is-hidden">Оставьте свои данные, мы вам перезвоним</h5>
+
+        <form class="modal_form" action="">
+            <label for="modal_name">
+                <div class="about">Имя</div>
+                <input id="modal_name" type="text">
+                    <svg class="modal_svg" width="12" height="12">
+                        <use  href="img/icons/symbol-defs-1.svg#icon-phone-black-18dp-1"></use>
+                    </svg></label>
+            <label for="modal_tel">
+                <div class="about">Телефон</div>
+                <input id="modal_tel" type="text">
+                    <svg class="modal_svg" width="13" height="13">
+                        <use href="img/icons/symbol-defs-1.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+            </label>
+            <label for="modal_mail">
+                <div class="about">Почта</div>
+                <input id="modal_mail" type="email">
+                <svg class="modal_svg" width="15" height="12">
+                    <use href="img/icons/symbol-defs-1.svg#icon-person-black-18dp-1"></use>
+                </svg>
+            </label>
+            <label for="comment">
+                <div class="about">Коментарий</div>
+                <textarea name="" id="comment"  placeholder="Введите текст"></textarea>            </label>
+        </form>
+
+
+
     </div>
 </div>
 
