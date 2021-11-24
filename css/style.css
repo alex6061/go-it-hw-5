@@ -336,8 +336,6 @@ h2 {
 }
 
 .window_absolute {
-    display: flex;
-    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -347,6 +345,8 @@ h2 {
 }
 
 .window_absolute p {
+    display: flex;
+    justify-content: center;
     padding: 27px 0;
     font-family: Roboto-Regular, Arial, sans-serif;
     font-weight: 700;
