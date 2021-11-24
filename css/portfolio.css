@@ -38,7 +38,6 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-start;
 }
 
 
@@ -67,8 +66,8 @@ nav {
 
 
 .header_nav {
-    display: inline-block;
-    overflow: hidden;
+    display: flex;
+    /*overflow: hidden;*/
     padding: 25px 0 25px;
 }
 
@@ -85,7 +84,7 @@ nav {
 .header_nav {
     padding: 25px 0 25px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 
@@ -135,9 +134,9 @@ nav {
 
 .tel {
     display: flex;
+    margin-right: 0;
     align-items: center;
     gap: 30px;
-    float: right;
 }
 
 .tel a {

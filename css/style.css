@@ -42,15 +42,13 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
+
 nav {
     display: flex;
-    justify-content: flex-start;
 }
 
 .header_logo {
-    float: left;
-    margin: 0 93px 0 0;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 .web {
@@ -69,6 +67,9 @@ nav {
     color: #212121;
 }
 
+
+
+
 .header_nav {
     display: flex;
     overflow: hidden;
@@ -76,11 +77,14 @@ nav {
 }
 
 
+
+
 .header_contacts {
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
     gap: 50px;
+    margin-left: 93px;
 }
 
 
@@ -111,6 +115,7 @@ nav {
     font-size: 14px;
     color: #212121;
     letter-spacing: 0.02em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_contacts li a:hover,
@@ -120,11 +125,13 @@ nav {
 }
 
 .tel {
-    float: right;
     display: flex;
-    justify-content: space-between;
+    margin-left: auto;
+    justify-content: end;
     align-items: center;
-    gap: 50px;
+    margin-right: 0;
+    gap: 30px;
+
 }
 
 .tel a {
@@ -133,6 +140,7 @@ nav {
     font-size: 14px;
     font-family: 'Roboto',Arial,sans-serif;
     font-weight: 500;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg_tel,
